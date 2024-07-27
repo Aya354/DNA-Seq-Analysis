@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Webserver</title>
+    <!-- <link rel="icon" href="OIP (1).jpg"> -->
+    <style>
+        h1{
+            font-size: 50px;
+            color: rgb(9, 50, 9);
+            text-align: center;
+        }
+
+        /* header {
+            color: rgb(12, 9, 9);
+            padding: 10px;
+            text-align: center;
+            align-items: left;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        } */
+
+        /* header h1 {
+            font-family: cursive;
+            margin-left: 5px;
+            margin-top: 25px;
+        } */
+
+        body{
+            color: rgb(0, 0, 0);
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+            /* height: 300vh; */
+            margin: 0;
+            /* display: flex; */
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+           }
+
+        .a {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 5px 5px; 
+            border-radius: 0ex 0px 20px 20px;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+           }
+
+        .b {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 5px 5px; 
+            border-radius: 0ex 0px 20px 20px;
+            /* background-color: rgb(155, 121, 174); */
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .c {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 5px 5px; 
+            border-radius: 0ex 0px 20px 20px;
+            /* background-color: rgb(67, 60, 84); */
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .d {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 5px 5px; 
+            border-radius: 0ex 0px 20px 20px;
+            /* background-color: rgb(67, 60, 84); */
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .e {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 5px 5px; 
+            border-radius: 0ex 0px 20px 20px;
+            /* background-color: rgb(67, 60, 84); */
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .button {
+            position: center;
+            font-family: cursive;
+            width: 150PX;
+            height: 70px;
+            padding: 20px;
+            /* margin-top: 10px;
+            margin-left: 200px; */
+            z-index: 2;
+            background-color: rgb(209, 102, 9);
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+
+        }
+        .button1{
+            background-color: rgb(22, 73, 37);
+            color: rgb(245, 245, 250);
+            padding: 20px 20px;
+            width: 30%;
+            border: 3px solid rgb(19, 75, 42);
+            border-radius: 20px;
+            cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <!-- <center><h1>Blasta</h1></center> -->
+    <!-- <header>
+        <h1>Genocatus</h1>
+    </header> -->
+    <header>
+        <!-- <div id="cats">
+            <img src="OIP (1).jpg" alt="cat image" height="50px"
+                width="5%">
+        </div> -->
+        <h1>Genocatus</h1>
+    </header>
+    <main>
+
+       <center><h2>Welcome to the Genocatus Explorer, your premier destination for <br> delving into the fascinating world of
+            feline
+            genomics! <br> Our advanced bioinformatics tool is meticulously crafted to empower <br> users with a
+            seamless and
+            insightful exploration of the feline genome.
+            <br>
+            <br>
+
+        </h2></center> 
+        <center><h3>
+            Embark on a journey of discovery with Genocatus Explorer <br> where cutting-edge genomics meets
+            accessible exploration, revealing <br> the genetic secrets of our beloved feline friends!
+            <br>
+            <br>
+            <br>
+           <center><button class="button"><b>Get Started</b></button></center>
+        </h3></center>
+    
+    <div class="a">
+        <!-- <img src="H.jpg" width="200px" height="150px" alt=""> -->
+        <center><p><label for="GC content percentage">GC content percentage</label></p></center>
+        <center><textarea id="GC content percentage" name="GC content percentage" rows="4" cols="40"></textarea></center>
+        <center><button class="button1">percentage</button></center>
+
+    </div>
+
+    <div class = "b">
+        <div>
+            
+            <p><label for="dna-Sequance">DNA-Sequance</label></p>
+            <textarea id="dna-Sequance" name="dna-Sequance" rows="4" cols="40"></textarea>
+            <button class="button1">Search</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <p><label for="Num of NucleotideS Type">Num of Nucleotides Type</label></p>
+            <textarea id="Num of NucleotideS Type" name="Num of NucleotideS Type" rows="4" cols="40"></textarea>
+            <button class="button1">Length</button>
+        </div>
+    </div>
+    
+        <div class = "c">
+
+            <!-- <img src="k.jpg" width="200px" height="150px" alt=""> -->
+            <p><label for="DNA complement generator">DNA complement generator</label></p>
+            <textarea id="DNA complement generator" name="DNA complement generator" rows="4" cols="40"></textarea>
+            <button class="button1">Complementary</button>
+            
+        </div>
+            
+        
+        <!-- <div class = "d">
+            
+            <p><label for="Central dogma">Central dogma</label></p>
+            <textarea id="Central dogma" name="Central dogma" rows="4" cols="40"></textarea>
+            <button class="button1">sss</button>
+        </div>
+        <div class = "e">
+            
+            <p><label for="SNPS">SNPS</label></p>
+            <textarea id="SNPS" name="SNPS" rows="4" cols="40"></textarea>
+            <button class="button1">Run</button>
+        </div> -->
+</body>
+</html>
